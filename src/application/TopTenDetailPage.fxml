@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="691.0" style="-fx-background-color: #2e3d42;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TopTenController">
+   <children>
+      <Label layoutX="391.0" layoutY="474.0" prefHeight="35.0" prefWidth="86.0" text="Pcode :" textFill="#19e884">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/id.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="298.0" layoutY="70.0" prefHeight="35.0" prefWidth="86.0" text="Type : " textFill="#19e884">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/type.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="285.0" layoutY="270.0" prefHeight="35.0" prefWidth="110.0" text="Category :" textFill="#19e884">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/category.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="297.0" layoutY="116.0" prefHeight="35.0" prefWidth="86.0" text="Price : " textFill="#19e884">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/price.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="13.0" layoutY="30.0" prefHeight="35.0" prefWidth="81.0" text="Title : " textFill="#19e884">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/title.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="294.0" layoutY="168.0" prefHeight="35.0" prefWidth="93.0" text="Genre : " textFill="#19e884">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/genre.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="297.0" layoutY="221.0" prefHeight="35.0" prefWidth="81.0" text="Sold : " textFill="#19e884">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/sold.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label fx:id="lblGeneral" layoutX="285.0" layoutY="316.0" prefHeight="35.0" prefWidth="110.0" text="PubCo :" textFill="#19e884">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imgGeneral" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pubco.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label fx:id="lblDetail" layoutX="15.0" layoutY="420.0" prefHeight="35.0" prefWidth="116.0" text="Company : " textFill="#19e884">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="imgDetail" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/author.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label layoutX="14.0" layoutY="473.0" prefHeight="35.0" prefWidth="171.0" text="Publication Date :" textFill="#19e884">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/date.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#172121" height="26.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="691.0" />
+      <Circle fill="#ff1f1f" layoutX="662.0" layoutY="11.0" onMouseClicked="#close" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="609.0" layoutY="3.0" onMouseClicked="#close" text="Fermer" textFill="RED" />
+      <ImageView fx:id="bookImg" fitHeight="336.0" fitWidth="257.0" layoutX="13.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="lblTitle" layoutX="95.0" layoutY="35.0" prefHeight="26.0" prefWidth="585.0" text="Label" textFill="#89b8f5">
+         <font>
+            <Font name="Arial Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblType" layoutX="395.0" layoutY="75.0" prefHeight="26.0" prefWidth="291.0" text="Label" textFill="#89b8f5">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPrice" layoutX="395.0" layoutY="121.0" prefHeight="26.0" prefWidth="291.0" text="Label" textFill="#89b8f5">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGenre" layoutX="395.0" layoutY="173.0" prefHeight="26.0" prefWidth="291.0" text="Label" textFill="#89b8f5">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSold" layoutX="395.0" layoutY="226.0" prefHeight="26.0" prefWidth="291.0" text="Label" textFill="#89b8f5">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCategory" layoutX="395.0" layoutY="275.0" prefHeight="26.0" prefWidth="291.0" text="Label" textFill="#89b8f5">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInGeneral" layoutX="395.0" layoutY="321.0" prefHeight="26.0" prefWidth="291.0" text="Label" textFill="#89b8f5">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInDetail" layoutX="129.0" layoutY="420.0" prefHeight="35.0" prefWidth="560.0" text="Label" textFill="#89b8f5">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPcode" layoutX="484.0" layoutY="479.0" prefHeight="26.0" prefWidth="196.0" text="Label" textFill="#89b8f5">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInDate" layoutX="185.0" layoutY="478.0" prefHeight="26.0" prefWidth="257.0" text="Label" textFill="#89b8f5">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

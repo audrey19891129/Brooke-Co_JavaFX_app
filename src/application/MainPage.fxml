@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainMenuPage" prefWidth="1600.0" style="-fx-background-color: #4b5056;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <GridPane fx:id="gLeftPane" layoutY="27.0" prefHeight="673.0" prefWidth="202.0" style="-fx-background-color: #2e3d42;" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="27.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblDash" alignment="CENTER" onMouseClicked="#dashboard" prefHeight="111.0" prefWidth="202.0" text="Dashboard" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <textFill>
+                  <LinearGradient endX="0.9809523809523809" endY="0.8047619047619048" startX="0.1619047619047619">
+                     <stops>
+                        <Stop color="#00ffae" />
+                        <Stop color="#00ff48" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="lblInv" alignment="CENTER" onMouseClicked="#inventaire" prefHeight="90.0" prefWidth="202.0" text="Inventory" GridPane.columnSpan="2" GridPane.rowIndex="6">
+               <textFill>
+                  <LinearGradient endX="0.9809523809523809" endY="0.8047619047619048" startX="0.1619047619047619">
+                     <stops>
+                        <Stop color="#00ffae" />
+                        <Stop color="#00ff48" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="lblMes" alignment="CENTER" onMouseClicked="#message" prefHeight="85.0" prefWidth="202.0" text="Message" GridPane.columnSpan="2" GridPane.rowIndex="7">
+               <textFill>
+                  <LinearGradient endX="0.9809523809523809" endY="0.8047619047619048" startX="0.1619047619047619">
+                     <stops>
+                        <Stop color="#00ffae" />
+                        <Stop color="#00ff48" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="lblHis" alignment="CENTER" onMouseClicked="#historique" prefHeight="81.0" prefWidth="202.0" text="History" GridPane.columnSpan="2" GridPane.rowIndex="8">
+               <textFill>
+                  <LinearGradient endX="0.9809523809523809" endY="0.8047619047619048" startX="0.1619047619047619">
+                     <stops>
+                        <Stop color="#00ffae" />
+                        <Stop color="#00ff48" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label alignment="CENTER" prefHeight="82.0" prefWidth="202.0" GridPane.columnSpan="2" GridPane.rowIndex="9">
+               <textFill>
+                  <LinearGradient endX="0.9809523809523809" endY="0.8047619047619048" startX="0.1619047619047619">
+                     <stops>
+                        <Stop color="#00ffae" />
+                        <Stop color="#00ff48" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="lblPar" alignment="CENTER" onMouseClicked="#parametre" prefHeight="67.0" prefWidth="215.0" text="Setting" GridPane.columnSpan="2" GridPane.rowIndex="11">
+               <textFill>
+                  <LinearGradient endX="0.9809523809523809" endY="0.8047619047619048" startX="0.1619047619047619">
+                     <stops>
+                        <Stop color="#00ffae" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="lblSignOut" alignment="CENTER" onMouseClicked="#signout" prefHeight="67.0" prefWidth="209.0" text="Sign Out" GridPane.columnSpan="2" GridPane.rowIndex="12">
+               <textFill>
+                  <LinearGradient endX="0.9809523809523809" endY="0.8047619047619048" startX="0.1619047619047619">
+                     <stops>
+                        <Stop color="#00ffae" />
+                        <Stop color="#00ff48" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="90.0" fitWidth="180.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@images/Brooke%20Et%20Co.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="18.0" />
+               </GridPane.margin>
+               <effect>
+                  <DropShadow color="WHITE" height="14.95" radius="7.684999999999999" spread="1.0" width="17.79" />
+               </effect>
+            </ImageView>
+            <Label fx:id="lblUserName" alignment="CENTER" prefHeight="111.0" prefWidth="202.0" textAlignment="CENTER" textFill="WHITE" underline="true" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <ImageView onMouseClicked="#dashboard" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@images/dashboard.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView onMouseClicked="#inventaire" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@images/inventory.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView onMouseClicked="#message" GridPane.rowIndex="7">
+               <image>
+                  <Image url="@images/message.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView onMouseClicked="#historique" GridPane.rowIndex="8">
+               <image>
+                  <Image url="@images/history.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView onMouseClicked="#parametre" GridPane.rowIndex="11">
+               <image>
+                  <Image url="@images/setting.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView styleClass="signout" GridPane.rowIndex="12">
+               <image>
+                  <Image url="@images/signout.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label fx:id="lblWebSite" alignment="CENTER" onMouseClicked="#website" prefHeight="67.0" prefWidth="215.0" text="WebSite" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <textFill>
+                  <LinearGradient endX="0.9809523809523809" endY="0.8047619047619048" startX="0.1619047619047619">
+                     <stops>
+                        <Stop color="#00ffae" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView onMouseClicked="#website" GridPane.rowIndex="5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@images/web.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </ImageView>
+         </children>
+      </GridPane>
+      <GridPane fx:id="gTopPane" alignment="TOP_CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="28.0" prefWidth="1007.0" style="-fx-background-color: #172121;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="15.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ProgressBar fx:id="barProgress" layoutX="379.0" layoutY="5.0" prefHeight="18.0" prefWidth="187.0" GridPane.columnIndex="2" />
+            <Label fx:id="lblLoading" layoutX="321.0" layoutY="5.0" text="Loading..." textFill="#0078ff" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="3.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="940.0" layoutY="7.0" text="Fermer" textFill="#ff1600" GridPane.columnIndex="8" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="780.0" layoutY="6.0" text="Minimize" textFill="#39c0ff" GridPane.columnIndex="6" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Circle fill="#25a9f5" layoutX="839.0" layoutY="16.0" onMouseClicked="#minimize" radius="11.0" stroke="BLACK" strokeType="INSIDE" style="-fx-cursor: HAND;" GridPane.columnIndex="6" GridPane.halignment="RIGHT" />
+            <Circle fill="#11ff0f" layoutX="922.0" layoutY="15.0" onMouseClicked="#fullscreen" radius="11.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="7" GridPane.halignment="RIGHT">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Circle>
+            <Label layoutX="857.0" layoutY="7.0" text="FullScreen" textFill="#00c951" GridPane.columnIndex="7" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="6.0" layoutY="5.0" text="Online" textFill="#00ffe5" GridPane.halignment="CENTER" />
+            <Circle fx:id="btnExit" fill="#ff0d0d" layoutX="989.0" layoutY="15.0" onMouseClicked="#exit" radius="11.0" stroke="BLACK" strokeType="INSIDE" GridPane.columnIndex="8" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Circle>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+      <BorderPane fx:id="idDashboardPage" layoutX="202.0" layoutY="27.0" prefHeight="673.0" prefWidth="799.0" style="-fx-background-color: #faf9f9;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="94.0" prefWidth="1378.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane style="-fx-border-style: solid;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Sold" textAlignment="CENTER" textFill="#22223b" GridPane.columnSpan="2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Total :" textAlignment="CENTER" textFill="#22223b" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotalSold" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="248" textAlignment="CENTER" textFill="#22223b" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Lost :" textAlignment="CENTER" textFill="#22223b" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="13" textAlignment="CENTER" textFill="#22223b" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane style="-fx-border-style: solid;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="User" textAlignment="CENTER" textFill="#22223b" GridPane.columnSpan="2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="User Live" textAlignment="CENTER" textFill="#22223b" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="0" textAlignment="CENTER" textFill="#22223b" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Today :" textAlignment="CENTER" textFill="#22223b" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="0" textAlignment="CENTER" textFill="#22223b" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane style="-fx-border-style: solid;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Statut" textAlignment="CENTER" textFill="#22223b" GridPane.columnSpan="2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Online" textAlignment="CENTER" textFill="#22223b" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="User" textAlignment="CENTER" textFill="#22223b" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Active" textAlignment="CENTER" textFill="#22223b" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblUser" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="JeanMartin L." textAlignment="CENTER" textFill="#22223b" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <GridPane style="-fx-border-style: solid;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="10.0" prefWidth="120.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="99.0" minWidth="10.0" prefWidth="80.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Inbox" textAlignment="CENTER" textFill="#22223b" GridPane.columnSpan="2">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Urgent" textAlignment="CENTER" textFill="#22223b" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblUrgent" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="0" textAlignment="CENTER" textFill="#22223b" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Order" textAlignment="CENTER" textFill="#22223b" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblOrder" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="0" textAlignment="CENTER" textFill="#22223b" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Warning" textAlignment="CENTER" textFill="#22223b" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblWarning" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="0" textAlignment="CENTER" textFill="#22223b" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="Need Confirmation" textAlignment="CENTER" textFill="#22223b" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblConfirmation" alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="200.0" text="0" textAlignment="CENTER" textFill="#22223b" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <center>
+            <HBox alignment="CENTER" prefHeight="230.0" prefWidth="1398.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BarChart fx:id="bcBook" title="BOOK" HBox.hgrow="ALWAYS">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" fx:id="xBook" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="yBook" label="SOLD" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <BarChart fx:id="bcMovie" title="MOVIE" HBox.hgrow="ALWAYS">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" fx:id="xMovie" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="yMovie" label="SOLD" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <BarChart fx:id="bcGame" title="VIDEO GAME" HBox.hgrow="ALWAYS">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" fx:id="xGame" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="yGame" label="SOLD" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </HBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="271.0" prefWidth="1398.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tvTopBook" prefWidth="400.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="tcTopNumberBook" prefWidth="75.0" sortable="false" text="Number #" />
+                      <TableColumn fx:id="tcTopBookPcode" prefWidth="75.0" sortable="false" text="PCode" />
+                      <TableColumn fx:id="tcTopBookTitle" prefWidth="75.0" sortable="false" text="Title" />
+                        <TableColumn fx:id="tcTopBookCategory" prefWidth="75.0" sortable="false" text="Category" />
+                        <TableColumn fx:id="tcTopBookSold" prefWidth="75.0" sortable="false" text="Sold" />
+                    </columns>
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </HBox.margin>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <TableView fx:id="tvTopMovie" prefWidth="400.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="tcTopNumberMovie" prefWidth="75.0" sortable="false" text="Number #" />
+                      <TableColumn fx:id="tcTopMoviePcode" prefWidth="75.0" sortable="false" text="PCode" />
+                      <TableColumn fx:id="tcTopMovieTitle" prefWidth="100.0" sortable="false" text="Title" />
+                        <TableColumn fx:id="tcTopMovieCategory" prefWidth="99.0" sortable="false" text="Category" />
+                        <TableColumn fx:id="tcTopMovieSold" prefWidth="75.0" sortable="false" text="Sold" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <HBox.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </HBox.margin>
+                  </TableView>
+                  <TableView fx:id="tvTopGame" prefWidth="400.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="tcTopNumberGame" prefWidth="75.0" sortable="false" text="Number #" />
+                      <TableColumn fx:id="tcTopGamePcode" prefWidth="75.0" sortable="false" text="PCode" />
+                      <TableColumn fx:id="tcTopGameTitle" prefWidth="75.0" sortable="false" text="Title" />
+                        <TableColumn fx:id="tcTopGameCategory" prefWidth="75.0" sortable="false" text="Category" />
+                        <TableColumn fx:id="tcTopGameSold" prefWidth="75.0" sortable="false" text="Sold" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <HBox.margin>
+                        <Insets left="25.0" right="10.0" />
+                     </HBox.margin>
+                  </TableView>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </bottom></BorderPane>
+      <BorderPane fx:id="idWebSitePage" layoutX="202.0" layoutY="27.0" prefHeight="673.0" prefWidth="799.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="27.0">
+         <center>
+            <AnchorPane>
+               <children>
+                  <Label fx:id="lblTitreTable" alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="585.0" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tvBook" prefHeight="550.0" prefWidth="585.0" style="-fx-background-color: #fefae0;" tableMenuButtonVisible="true" translateY="50.0" visible="false" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="tcPcodeBook" minWidth="75.0" prefWidth="100.0" text="PCode" />
+                        <TableColumn fx:id="tcTitleBook" prefWidth="79.0" text="Title" />
+                        <TableColumn fx:id="tcAuthorsBook" prefWidth="79.0" text="Authors" />
+                        <TableColumn fx:id="tcPubcoBook" prefWidth="79.0" text="Pubco" />
+                        <TableColumn fx:id="tcPubdateBook" prefWidth="79.0" text="Pubdate" />
+                        <TableColumn fx:id="tcCategoryBook" prefWidth="79.0" text="Category" />
+                        <TableColumn fx:id="tcGenreBook" prefWidth="79.0" text="Genre" />
+                        <TableColumn fx:id="tcPriceBook" prefWidth="79.0" text="Price" />
+                        <TableColumn fx:id="tcStateBook" prefWidth="79.0" text="State" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <TableView fx:id="tvMovie" prefHeight="550.0" prefWidth="585.0" style="-fx-background-color: #fefae0;" tableMenuButtonVisible="true" translateY="50.0" visible="false" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="tcPcodeMovie" prefWidth="79.0" text="PCode" />
+                        <TableColumn fx:id="tcTitleMovie" prefWidth="79.0" text="Title" />
+                        <TableColumn fx:id="tcActorsMovie" prefWidth="79.0" text="Actors" />
+                        <TableColumn fx:id="tcDirectorMovie" prefWidth="79.0" text="Director" />
+                        <TableColumn fx:id="tcRelYearMovie" prefWidth="79.0" text="RelYear" />
+                        <TableColumn fx:id="tcCategoryMovie" prefWidth="79.0" text="Category" />
+                        <TableColumn fx:id="tcGenreMovie" prefWidth="79.0" text="Genre" />
+                        <TableColumn fx:id="tcPriceMovie" prefWidth="79.0" text="Price" />
+                        <TableColumn fx:id="tcStateMovie" prefWidth="79.0" text="State" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="tvGame" prefHeight="550.0" prefWidth="585.0" style="-fx-background-color: #fefae0;" tableMenuButtonVisible="true" translateY="50.0" visible="false" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="tcPcodeGame" prefWidth="79.0" text="PCode" />
+                        <TableColumn fx:id="tcTitleGame" prefWidth="79.0" text="Title" />
+                        <TableColumn fx:id="tcConsoleGame" prefWidth="79.0" text="Console" />
+                        <TableColumn fx:id="tcCompanyGame" prefWidth="79.0" text="Company" />
+                        <TableColumn fx:id="tcRelDateGame" prefWidth="79.0" text="RelDate" />
+                        <TableColumn fx:id="tcCategoryGame" prefWidth="79.0" text="Category" />
+                        <TableColumn fx:id="tcGenreGame" prefWidth="79.0" text="Genre" />
+                        <TableColumn fx:id="tcPriceGame" prefWidth="79.0" text="Price" />
+                        <TableColumn fx:id="tcStateGame" prefWidth="79.0" text="State" />
+                     </columns>
+                  </TableView>
+                  <TableView fx:id="tvAllProducts" prefHeight="550.0" prefWidth="585.0" style="-fx-background-color: #fefae0;" tableMenuButtonVisible="true" translateY="50.0" visible="false" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="tcPcodeAll" prefWidth="79.0" text="PCode" />
+                        <TableColumn fx:id="tcCategoryAll" prefWidth="79.0" text="Category" />
+                        <TableColumn fx:id="tcTypeAll" prefWidth="79.0" text="Type" />
+                        <TableColumn fx:id="tcGenreAll" prefWidth="79.0" text="Genre" />
+                        <TableColumn fx:id="tcTitleAll" prefWidth="79.0" text="Title" />
+                        <TableColumn fx:id="tcPriceAll" prefWidth="79.0" text="Price" />
+                        <TableColumn fx:id="tcPictureAll" prefWidth="79.0" text="Picture" />
+                        <TableColumn fx:id="tcStateAll" prefWidth="79.0" text="State" />
+                     </columns>
+                  </TableView>
+                  <Label fx:id="lblTotal" layoutX="928.0" text="Total :" textFill="WHITE" visible="false" AnchorPane.rightAnchor="80.0">
+                     <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblCount" alignment="CENTER" contentDisplay="CENTER" layoutX="1064.0" prefHeight="51.0" prefWidth="68.0" textFill="WHITE" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+         <right>
+            <AnchorPane>
+               <children>
+                  <VBox fx:id="booksButtons" alignment="CENTER" prefHeight="622.0" prefWidth="100.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnNewBook" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#openNewBook" style="-fx-background-color: #caffbf;" text="New Book" textAlignment="CENTER" textFill="#0eda34">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="25.0" left="10.0" right="5.0" />
+                           </VBox.margin>
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@images/add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </VBox>
+                  <VBox fx:id="moviesButtons" alignment="CENTER" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="btnNewMovie" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#openNewMovie" style="-fx-background-color: #caffbf;" text="New  Movie" textAlignment="CENTER" textFill="#0eda34">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@images/add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="25.0" left="10.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox fx:id="gamesButtons" alignment="CENTER" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="btnNewGame" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#openNewGame" style="-fx-background-color: #caffbf;" text="New Game" textAlignment="CENTER" textFill="#0eda34">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@images/add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="25.0" left="10.0" right="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </right>
+         <top>
+            <AnchorPane prefHeight="50.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtSearchProduct" layoutX="302.0" layoutY="13.0" prefHeight="25.0" prefWidth="394.0" visible="false" AnchorPane.leftAnchor="302.0" />
+                  <ComboBox fx:id="cbSorted" layoutX="146.0" layoutY="13.0" prefWidth="150.0" visible="false" />
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="25.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnSectionLivre" contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionLivre" style="-fx-background-color: #e76f51;" text="Book" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/book.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSectionFilm" contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionFilm" style="-fx-background-color: #e63946;" text="Movie" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/movie.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSectionJeuxVideo" contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionJeuxVideo" style="-fx-background-color: #ef476f;" text="Video Game" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/controller.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSectionAll" contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionAllProducts" style="-fx-background-color: #023e8a;" text="All Products" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/all.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+            </VBox>
+         </left></BorderPane>
+      <BorderPane fx:id="idInventairePage" layoutX="202.0" layoutY="27.0" prefHeight="673.0" prefWidth="799.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="27.0">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="573.0" prefWidth="160.0" spacing="25.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnInventory" contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionInventory" prefHeight="69.0" prefWidth="120.0" style="-fx-background-color: #0db39e;" text="Inventory" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/inventory.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnBoxInventory" contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionBoxInventory" prefHeight="69.0" prefWidth="120.0" style="-fx-background-color: #e63946;" text="Box Inventory" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/stock.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnOrders" contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionOrderCompany" prefHeight="69.0" prefWidth="120.0" style="-fx-background-color: #023e8a;" text="Orders" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/orders.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnInactive" contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionProductInactive" prefHeight="69.0" prefWidth="120.0" style="-fx-background-color: #ef476f;" text="Product INACTIVE" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/inactive.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnBuy" contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionProductPending" prefHeight="69.0" prefWidth="120.0" style="-fx-background-color: #e76f51;" text="Product Arrived" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/orderwait.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tvProductInventory" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tcProductPcode" prefWidth="75.0" text="Pcode" />
+                      <TableColumn fx:id="tcProductTitle" prefWidth="75.0" text="Title" />
+                        <TableColumn fx:id="tcProductCategory" prefWidth="75.0" text="Category" />
+                        <TableColumn fx:id="tcProductType" prefWidth="75.0" text="Type" />
+                        <TableColumn fx:id="tcProductInventory" prefWidth="75.0" text="Inventory" />
+                        <TableColumn fx:id="tcProductMinimum" prefWidth="75.0" text="Minimum" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <TableView fx:id="tvProductInactive" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tcPcodeInactive" prefWidth="75.0" text="Pcode" />
+                      <TableColumn fx:id="tcTitleInactive" prefWidth="75.0" text="Title" />
+                        <TableColumn fx:id="tcCategoryInactive" prefWidth="75.0" text="Category" />
+                        <TableColumn fx:id="tcTypeInactive" prefWidth="75.0" text="Type" />
+                        <TableColumn fx:id="tcGenreInactive" prefWidth="75.0" text="Genre" />
+                        <TableColumn fx:id="tcPriceInactive" prefWidth="75.0" text="Price" />
+                        <TableColumn fx:id="tcStateInactive" prefWidth="75.0" text="State" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <TableView fx:id="tvStockInventory" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tcStockPcode" prefWidth="75.0" text="Pcode" />
+                      <TableColumn fx:id="tcStockProvider" prefWidth="75.0" text="Provider" />
+                        <TableColumn fx:id="tcStockPurchaseId" prefWidth="75.0" text="Purchase Num#" />
+                        <TableColumn fx:id="tcStockBoughtQuant" prefWidth="75.0" text="Bought Quantity" />
+                        <TableColumn fx:id="tcStockUnitPrice" prefWidth="75.0" text="Unit Price Bought" />
+                        <TableColumn fx:id="tcStockReceivedDate" prefWidth="75.0" text="Received" />
+                        <TableColumn fx:id="tcStockLeftQuant" prefWidth="75.0" text="Stock Left" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <TableView fx:id="tvProductPending" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tcPcodePending" prefWidth="75.0" text="PCode" />
+                      <TableColumn fx:id="tcTitlePending" prefWidth="75.0" text="Title" />
+                        <TableColumn fx:id="tcCategoryPending" prefWidth="75.0" text="Category" />
+                        <TableColumn fx:id="tcTypePending" prefWidth="75.0" text="Type" />
+                        <TableColumn fx:id="tcGenrePending" prefWidth="75.0" text="Genre" />
+                        <TableColumn fx:id="tcPricePending" prefWidth="75.0" text="Price" />
+                        <TableColumn fx:id="tcStatePending" prefWidth="75.0" text="State" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <TableView fx:id="tvOrdersCompany" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tcOrderConfirmation" prefWidth="75.0" text="# Confirmation" />
+                        <TableColumn fx:id="tcOrderPurchaseId" prefWidth="75.0" text="Purchase Num#" />
+                      <TableColumn fx:id="tcOrderValidation" prefWidth="75.0" text="Validation" />
+                        <TableColumn fx:id="tcOrderAmount" prefWidth="75.0" text="Amount" />
+                        <TableColumn fx:id="tcOrderDate" prefWidth="75.0" text="date" />
+                        <TableColumn fx:id="tcOrderPcode" prefWidth="75.0" text="PCode" />
+                        <TableColumn fx:id="tcOrderBought" prefWidth="75.0" text="Bought" />
+                        <TableColumn fx:id="tcOrderFirstname" prefWidth="75.0" text="Firstname" />
+                        <TableColumn fx:id="tcOrderLastName" prefWidth="75.0" text="Lastname" />
+                        <TableColumn fx:id="tcOrderStatus" prefWidth="75.0" text="Status" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="50.0">
+                     <children>
+                        <TextField fx:id="txtSearchPI" layoutX="374.0" layoutY="14.0" prefHeight="25.0" prefWidth="394.0" visible="false" AnchorPane.leftAnchor="374.0" />
+                     </children>
+                  </AnchorPane>
+               </children></HBox>
+         </top>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </right></BorderPane>
+      <BorderPane fx:id="idMessagePage" layoutX="202.0" layoutY="27.0" prefHeight="673.0" prefWidth="799.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="27.0">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="573.0" prefWidth="136.0" spacing="25.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionInbox" prefHeight="69.0" prefWidth="100.0" style="-fx-background-color: #9d4edd;" text="Inbox" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/inbox.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionClientsOrders" prefHeight="69.0" prefWidth="100.0" style="-fx-background-color: #048ba8;" text="Clients Orders" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/orders.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#sectionShipping" prefHeight="69.0" prefWidth="100.0" style="-fx-background-color: #e63946;" text="Shipping" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0">
+                           <image>
+                              <Image url="@images/ship.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="25.0" />
+               </padding>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </top>
+         <bottom>
+            <HBox prefHeight="220.0" prefWidth="1392.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tvAlertInbox" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tcAlertNumber" prefWidth="86.0" text="Number" />
+                      <TableColumn fx:id="tcAlertLevel" prefWidth="168.0" text="Level" />
+                        <TableColumn fx:id="tcAlertMessage" prefWidth="888.0" text="Message" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="tvClientsOrders" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tcClientOrderId" prefWidth="75.0" text="Order #" />
+                      <TableColumn fx:id="tcClientEmail" prefWidth="75.0" text="Email" />
+                        <TableColumn fx:id="tcClientUsername" prefWidth="75.0" text="Username" />
+                        <TableColumn fx:id="tcClientFirstname" prefWidth="75.0" text="Firstname" />
+                        <TableColumn fx:id="tcClientLastname" prefWidth="75.0" text="Lastname" />
+                        <TableColumn fx:id="tcClientOrderDate" prefWidth="75.0" text="Order Date" />
+                        <TableColumn fx:id="tcClientStatus" prefWidth="75.0" text="Status" />
+                        <TableColumn fx:id="tcClientSubtotal" prefWidth="75.0" text="Subtotal" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <TableView fx:id="tvShipping" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tcShippingOrder" prefWidth="76.0" text="Order #" />
+                      <TableColumn fx:id="tcShippingEmail" prefWidth="209.0" text="Email" />
+                        <TableColumn fx:id="tcShippingUsername" prefWidth="94.0" text="Username" />
+                        <TableColumn fx:id="tcShippingFirstname" prefWidth="102.0" text="Firstname" />
+                        <TableColumn fx:id="tcShippingLastname" minWidth="0.0" prefWidth="113.0" text="Lastname" />
+                        <TableColumn fx:id="tcShippingOrderDate" prefWidth="169.0" text="Order Date" />
+                        <TableColumn fx:id="tcShippingStatus" prefWidth="101.0" text="Status" />
+                        <TableColumn fx:id="tcShippingSubtotal" prefWidth="131.0" text="Subtotal" />
+                        <TableColumn fx:id="tcShippingDate" prefWidth="160.0" text="Shipping Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </right></BorderPane>
+      <BorderPane fx:id="idHistoriquePage" layoutX="202.0" layoutY="27.0" prefHeight="673.0" prefWidth="799.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="27.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="HISTORY" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <TableView fx:id="tvHistory" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="tcHistoryStat" prefWidth="119.0" text="Function" />
+                <TableColumn fx:id="tcHistoryMessage" prefWidth="584.0" text="Note" />
+                  <TableColumn fx:id="tcHistoryDate" minWidth="0.0" prefWidth="110.99993896484375" text="Date" />
+              </columns>
+            </TableView>
+         </center>
+         <bottom>
+            <HBox prefHeight="205.0" prefWidth="1392.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <VBox prefHeight="241.0" prefWidth="283.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox alignment="CENTER" prefHeight="241.0" prefWidth="295.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#clearHistory" text="Clear History">
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/clear.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </right></BorderPane>
+      <BorderPane fx:id="idAidePage" layoutX="202.0" layoutY="27.0" prefHeight="673.0" prefWidth="799.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="27.0" />
+      <BorderPane fx:id="idParametrePage" layoutX="212.0" layoutY="37.0" prefHeight="673.0" prefWidth="799.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="202.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="27.0">
+         <center>
+            <AnchorPane prefHeight="305.0" prefWidth="549.0" style="-fx-background-color: #f7fff7;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="82.0" layoutY="26.0" text="THEME -">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rbDark" layoutX="183.0" layoutY="68.0" mnemonicParsing="false" text="Dark Theme">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rbCloud" layoutX="183.0" layoutY="94.0" mnemonicParsing="false" text="Cloud Theme">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rbBlackWhite" layoutX="183.0" layoutY="122.0" mnemonicParsing="false" text="BlackWhite Theme">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rbLivingCoral" layoutX="183.0" layoutY="153.0" mnemonicParsing="false" text="Living Coral Theme">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="rbRainbow" layoutX="183.0" layoutY="182.0" mnemonicParsing="false" text="Rainbow Theme">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <Button layoutX="179.0" layoutY="244.0" mnemonicParsing="false" onAction="#applyTheme" prefHeight="49.0" prefWidth="152.0" style="-fx-background-color: #484a47;" text="Apply" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/check.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="22.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/theme.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <HBox prefHeight="53.0" prefWidth="1392.0" BorderPane.alignment="CENTER" />
+         </top>
+         <bottom>
+            <HBox prefHeight="312.0" prefWidth="1392.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <VBox prefHeight="308.0" prefWidth="440.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox prefHeight="308.0" prefWidth="525.0" BorderPane.alignment="CENTER" />
+         </right></BorderPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

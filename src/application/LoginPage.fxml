@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <BorderPane fx:id="loginWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" stylesheets="@style.css">
+         <top>
+            <Pane fx:id="panelTop" prefHeight="19.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Circle fx:id="btnExit" fill="DODGERBLUE" focusTraversable="true" layoutX="483.0" layoutY="10.0" onMouseClicked="#exit" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="461.0" layoutY="10.0" onMouseClicked="#test" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <FlowPane fx:id="btnFlowPane" prefHeight="45.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="btnCancel" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#cancel" prefHeight="45.0" prefWidth="250.0" text="Cancel">
+                     <graphic>
+                        <ImageView translateX="-50.0">
+                           <image>
+                              <Image url="@images/cancel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="btnLogin" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#validation" prefHeight="45.0" prefWidth="250.0" text="Login" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView translateX="-50.0">
+                           <image>
+                              <Image url="@images/login.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </FlowPane>
+         </bottom>
+         <center>
+            <AnchorPane>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="lblCodeEmploye" layoutX="94.0" layoutY="135.0" text="Code Employe :" />
+                        <Label fx:id="lblMotDePass" layoutX="104.0" layoutY="175.0" text="Mot de Pass :" />
+                        <TextField fx:id="txtCodeEmploye" layoutX="299.0" layoutY="131.0" prefHeight="25.0" prefWidth="130.0" />
+                        <ImageView fitHeight="126.0" fitWidth="234.0" layoutX="138.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Programmation%20Web%20Client/Web%20Design%20Projet%20Final%20JSON-AJAX-JQUERY-BOOSTRAP/logoImage/Brooke-Et-Co.gif" />
+                           </image>
+                        </ImageView>
+                        <PasswordField fx:id="txtPassword" layoutX="209.0" layoutY="180.0" prefHeight="25.0" prefWidth="220.0" />
+                        <Label alignment="CENTER" layoutX="288.0" layoutY="128.0" text="-">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="cmbCode" layoutX="209.0" layoutY="132.0" prefHeight="25.0" prefWidth="77.0" promptText="GEST" visible="false" visibleRowCount="2" />
+                        <ImageView layoutX="46.0" layoutY="120.0" onMouseClicked="#exit">
+                           <image>
+                              <Image url="@images/employe.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView layoutX="56.0" layoutY="168.0">
+                           <image>
+                              <Image url="@images/password.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnExittt" layoutX="68.0" layoutY="57.0" mnemonicParsing="false" text="exit" visible="false" />
+                        <Label fx:id="lblTitleAgent" layoutX="209.0" layoutY="134.0" text="stock agent">
+                           <font>
+                              <Font name="Arial Narrow Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imgTest" fitHeight="150.0" fitWidth="200.0" layoutX="4.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <Pane fx:id="loadingPane" prefHeight="200.0" prefWidth="500.0" visible="false">
+         <children>
+            <ProgressBar fx:id="loadingBar" layoutX="26.0" layoutY="139.0" prefHeight="18.0" prefWidth="448.0" progress="0.0" />
+            <Label fx:id="lblLoading" layoutX="190.0" layoutY="100.0" text="Loading....">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

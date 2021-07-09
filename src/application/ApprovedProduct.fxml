@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="378.0" prefWidth="600.0" style="-fx-background-color: #264653;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ApprovedProductController">
+   <children>
+      <ImageView fx:id="imgProduct" fitHeight="305.0" fitWidth="200.0" layoutX="14.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/noPicture.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="26.0" text="Pcode :" textFill="#2bff92">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="47.0" text="Title :" textFill="#2bff92">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="81.0" text="Category :" textFill="#2bff92">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="115.0" text="Type :" textFill="#2bff92">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="148.0" text="Genre :" textFill="#2bff92">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="187.0" text="Price :" textFill="#2bff92">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="224.0" text="State :" textFill="#2bff92">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTitle" layoutX="311.0" layoutY="47.0" prefHeight="17.0" prefWidth="260.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCategory" layoutX="312.0" layoutY="81.0" prefWidth="260.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblType" layoutX="312.0" layoutY="115.0" prefWidth="260.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGenre" layoutX="312.0" layoutY="148.0" prefWidth="260.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPrice" layoutX="310.0" layoutY="187.0" prefWidth="260.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblState" layoutX="309.0" layoutY="224.0" prefWidth="260.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnApproved" layoutX="297.0" layoutY="308.0" mnemonicParsing="false" onAction="#approved" prefHeight="56.0" prefWidth="289.0" style="-fx-background-color: #e9c46a;" text="Approuved Received Product">
+         <graphic>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/approved.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblPcode" layoutX="79.0" layoutY="26.0" prefHeight="17.0" prefWidth="260.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#393939" height="25.0" layoutX="-5.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+      <Circle fill="RED" layoutX="578.0" layoutY="13.0" onMouseClicked="#close" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="536.0" layoutY="4.0" text="Close" textFill="RED" />
+      <Label layoutX="222.0" layoutY="258.0" text="Bought :" textFill="#2bff92">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="415.0" layoutY="21.0" text="Purchase # :" textFill="#2bff92">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBought" layoutX="309.0" layoutY="258.0" prefWidth="260.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPurchaseId" layoutX="508.0" layoutY="21.0" prefHeight="25.0" prefWidth="86.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

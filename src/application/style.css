@@ -1,0 +1,50 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#btnCancel, #btnLogin{
+	-fx-border-style: solid;
+	-fx-border-color: lightgray;
+}
+
+#btnCancel:hover, #btnLogin:hover {
+	-fx-background-color: lightgray;
+	-fx-cursor: HAND;
+	-fx-border-color: turquoise;
+}
+
+#panelTop {
+	-fx-background-color: #172121;
+}
+
+#btnExit {
+	-fx-fill: red;	
+}
+
+#btnExit:hover {
+	-fx-cursor: HAND;
+	-fx-fill: darkred;
+}
+
+#lblDash:hover, #lblWebSite:hover, #lblInv:hover, #lblMes:hover, #lblHis:hover, #lblAid:hover, #lblPar:hover {
+	/*-fx-background-color: turquoise;*/
+	-fx-text-fill: white;
+	-fx-cursor: HAND;
+}
+
+/* #lblDash:pressed{
+	-fx-background-color: black;
+}*/
+
+
+#lblSignOut:hover{
+	-fx-background-color: #710302;
+	-fx-text-fill: white;
+	-fx-cursor: HAND;
+}
+
+#lblAjouter:hover, #lblRecommencer:hover {
+	-fx-background-color: #50514f;
+}
+
+.couleurRouge{
+	-fx-background-color: red;
+}
